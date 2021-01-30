@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BB Developers</title>
+	<link rel="stylesheet" href="./css/superslide.css" />
+	<link rel="stylesheet" href="./css/main.css" />
+
+
+	<!-- // css  -->
+</head>
+<body>
+	
+	<div id="slides">
+		<div class="slides-container">
+			<img src="./image/vanner-1.jpg" alt="vanner-image">
+			<img src="./image/vanner-2.jpg" alt="vanner-image">
+			<img src="./image/vanner-3.jpg" alt="vanner-image">
+			<img src="./image/vanner-4.jpg" alt="vanner-image">
+			<img src="./image/vanner-5.jpg" alt="vanner-image">
+			<img src="./image/vanner-6.jpg" alt="vanner-image">
+		</div>
+
+		<div class="title">
+			<div class="heading">
+				<p class="main-heading">TAHMINA TANJIL TULY</p>
+				<p class="sub-heading typed"></p>
+			</div>
+		</div>
+
+		<div class="slides-navigation">
+			<a href="#" class="next"> ⇨ </a>
+			<a href="#" class="prev"> ⇦ </a>
+		</div>
+	</div>
+
+
+	<!-- // javascript  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./js/jquery.superslide.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+	<script>
+		$(document).ready(function(){
+			
+			// Super slides
+			$("#slides").superslides({
+				animation:"fade",
+				play:5000,
+				pagination:false
+			})
+
+			// Typedjs
+			new Typed(".typed",{
+				strings:['Software Engineer', "Full stack web Developer", "Web developer"],
+				typeSpeed:80,
+				loop:true,
+				startDelay:1000,
+				showCursor:false
+			})
+		})
+	</script>
+</body>
+</html>
+
